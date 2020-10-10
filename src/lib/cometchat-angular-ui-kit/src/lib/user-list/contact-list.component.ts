@@ -205,7 +205,6 @@ export class ContactListComponent implements OnInit {
 
   }
 
-
   logout = () => {
     CometChat.logout().then(() => {
       location.href = '/';
