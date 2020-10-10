@@ -1,0 +1,33 @@
+<div style="position: fixed; width: 100%; height: 100%" *ngIf="showloader">
+  <div style="width: 100%; height: 100%; display: flex; background: #aaa7">
+    <p style="margin: auto; font-size: 50px; color: rgb(44, 44, 44)">
+      Loading...
+    </p>
+  </div>
+</div>
+<div
+  style="padding-top: 50px; text-align: center; display: flex"
+  *ngIf="showUi"
+>
+  <div style="margin: auto">
+    <div style="width: 150px; margin: auto">
+      <img
+        style="max-width: 100%; max-height: 100%"
+        src="https://www.cometchat.com/wp-content/uploads/2018/03/Logo-C-White.png"
+        alt=""
+      />
+    </div>
+
+    <p style="margin: auto; padding: 10px">Login and continue with UID</p>
+
+    <input
+      style="margin: auto; padding: 10px"
+      [(ngModel)]="uid"
+      type="text"
+      name="uid"
+      placeholder="Enter your UID here"
+    />
+
+    <div class="loginButton" (click)="login($event, uid)">Login</div>
+  </div>
+</div>

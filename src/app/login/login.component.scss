@@ -1,0 +1,35 @@
+input {
+  border: 2px solid #aaa;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 550;
+  color: #555;
+}
+
+.loginButton {
+  width: 76px;
+  height: 40px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background: #333;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  color: darken($color: white, $amount: 5%);
+  background: darken($color: #333, $amount: 20%);
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
